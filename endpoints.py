@@ -14306,9 +14306,10 @@ class VideoPlayerVODPostplayRecommendations(Endpoint):
 		draft = self.draft.copy(); draft['variables'] = variables
 		return draft
 
+\
 class videoPlaybackAccessToken(Endpoint):
 	def __init__(self):
-		self.draft = '''{{"query": "{{\n              videoPlaybackAccessToken(\n                id: \"{}\",\n                params: {{\n                  platform: \"web\",\n                  playerBackend: \"mediaplayer\",\n                  playerType: \"site\"\n                }}\n              )\n              {{\n                value\n                signature\n              }}\n            }}"}}'''
+		self.draft = '''{{"query": "{{\\n              videoPlaybackAccessToken(\\n                id: \\"{}\\",\\n                params: {{\\n                  platform: \\"web\\",\\n                  playerBackend: \\"mediaplayer\\",\\n                  playerType: \\"site\\"\\n                }}\\n              )\\n              {{\\n                value\\n                signature\\n              }}\\n            }}"}}'''
 
 	def build_query(self, vod_id: str):
 		return self.draft.format(vod_id)
