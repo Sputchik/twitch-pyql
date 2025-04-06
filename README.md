@@ -2,7 +2,7 @@
 
 Twitch's Typed, Annotated GraphQL operations
 
-This library provides representation of request/responses types within all endpoints used when surfing through https://twitch.tv. Type definitions are automatically generated and **may not represent all possible types**, but gives you a better experience extracting response keys.
+File provides representation of request/responses types within all endpoints used when surfing through https://twitch.tv. Type definitions are automatically generated and **may not represent all possible types**, but gives you a better experience extracting response keys.
 
 Example:
 
