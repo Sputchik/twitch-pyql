@@ -1,3 +1,5 @@
+# Made by @sputchik on Github
+
 from typing import Dict, TypedDict, List, Optional, Any, Union
 from types import NoneType
 
