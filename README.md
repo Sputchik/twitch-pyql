@@ -2,7 +2,17 @@
 
 Twitch's Typed, Annotated GraphQL operations
 
-File provides representation of request/responses types within all endpoints used when surfing through https://twitch.tv. Type definitions are automatically generated and **may not represent all possible types**, but gives you a better experience extracting response keys.
+[`endpoints.py`](endpoints.py) should provide you a representation of twitch's GraphQL operations, with a fully typed requests and responses. At the time you read, it's a v2 version of generated endpoints
+
+If there are any uncovered keys - they are Dict/List type, which can be marked as `Falsy[List[Any]]`
+
+Note that `Falsy` type comes from my [`sputchedtools`](https://pypi.org/project/sputchedtools) module
+
+> [!CAUTION]
+> Pythons blacklisted keywords are changed to add underscore `_` at the end. In a line that contains this key, there will be comment at the end: `# WARNING: ADDED UNDERSCORE`
+
+> [!NOTE]
+> For advanced usage with better filter and literals for static keys, dm https://t.me/reddyy0x
 
 Example:
 
