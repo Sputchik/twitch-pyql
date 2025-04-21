@@ -12,7 +12,7 @@ Note that `Falsy` type comes from my [`sputchedtools`](https://pypi.org/project/
 > Pythons blacklisted keywords are changed to add underscore `_` at the end. In a line that contains this key, there will be comment at the end: `# WARNING: ADDED UNDERSCORE`
 
 > [!NOTE]
-> For advanced usage with better filter and literals for static keys, dm https://t.me/reddyy0x
+> `endpoints.py` will be updated to most up-to-date whenever i feel like, it can be either an hour or a month. For latest changes, dm https://t.me/reddyy0x
 
 Example:
 
