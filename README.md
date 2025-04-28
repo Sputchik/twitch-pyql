@@ -2,7 +2,7 @@
 
 Twitch's Typed, Annotated GraphQL operations
 
-[`endpoints.py`](endpoints.py) should provide you a representation of twitch's GraphQL operations, with a fully typed requests and responses. At the time writing, it's a v2.1 version of generated endpoints - no redundant `build_query` functions
+[`endpoints.py`](endpoints.py) should provide you a representation of twitch's GraphQL operations, with a fully typed requests and responses. At the time writing, it's a v2.1 version of generated endpoints - no redundant `build_query` functions and `__typename` in TypedDicts
 
 If there are any uncovered keys - they are Dict/List type, which can be marked as `Falsy[List[Any]]`
 
